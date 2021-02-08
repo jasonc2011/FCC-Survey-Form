@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dist/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Trirong:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">FBCL Volunteer Survey Form</h1>
+    <p id="description">Thank you for joining us in service to the King</p>
+
+    <form id="survey-form">
+        <div class="formGroup">
+            <label id="name-label" for="name" class="formLabel">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" class="formControl input-text" required />
+        </div>
+        <div class="formGroup">
+            <label id="email-label" for="email" class="formLabel">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your Email" class="formControl input-text" required />
+        </div>
+        <div class="formGroup">
+            <label id="number-label" for="number" class="formLabel">Age: <span class="form-clue">(optional)</span></label>
+            <input id="number" name="number" id="number" type="number" min="10" max="110" placeholder="Age" class="formControl input-text" />
+        </div>
+        <div class="formGroup">
+            <label id="dropdown-label" for="dropdown" class="formLabel">How often would you like to serve?</label>
+            <select id="dropdown" name="dropdown" class="formControl input-text" required>
+                <option disabled selected value>Choose availability</option>
+                <option value="monthly">Once a month only.</option>
+                <option value="bimonthly">No more than twice a month.</option>
+                <option value="weekly">Every week is fine.</option>
+            </select>
+        </div>
+        <div class="formGroup">
+            <p class="formLabel">Which service do you attend?</p>
+            <label for="radioOpt1" class="formLabel form-radiocheck-text"><input type="radio" id="radioOpt1" name="radio" value="9:00am English" class="input-radio" checked/>9:00am English</label>
+            <label for="radioOpt2" class="formLabel form-radiocheck-text"><input type="radio" id="radioOpt2" name="radio" value="10:00am Spanish" class="input-radio"/>10:00am Spanish</label>
+            <label for="radioOpt3" class="formLabel form-radiocheck-text"><input type="radio" id="radioOpt3" name="radio" value="10:30am English" class="input-radio"/>10:30am English</label>
+            <label for="radioOpt4" class="formLabel form-radiocheck-text"><input type="radio" id="radioOpt4" name="radio" value="12:00pm Spanish" class="input-radio"/>12:00pm Spanish</label>
+        </div>
+        <div class="formGroup">
+            <p class="formLabel">What areas of service are you most interested in? <span class="form-clue">(check all that apply)</span></p>
+            <label for="checkOpt1" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt1" name="checkbox" value="setupdown" class="input-radio"/>Setup/Teardown</label>
+            <label for="checkOpt2" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt2" name="checkbox" value="greeters" class="input-radio"/>Greeters</label>
+            <label for="checkOpt3" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt3" name="checkbox" value="ushers" class="input-radio"/>Ushers</label>
+            <label for="checkOpt4" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt4" name="checkbox" value="worshipteam" class="input-radio"/>Worship Team</label>
+            <label for="checkOpt5" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt5" name="checkbox" value="techteam" class="input-radio"/>Tech Team</label>
+            <label for="checkOpt6" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt6" name="checkbox" value="childcare" class="input-radio"/>Child Care</label>
+            <label for="checkOpt7" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt7" name="checkbox" value="hospitality" class="input-radio"/>Hospitality</label>
+            <label for="checkOpt8" class="formLabel form-radiocheck-text"><input type="checkbox" id="checkOpt8" name="checkbox" value="security" class="input-radio"/>Security</label>
+        </div>
+        <div class="formGroup">
+            <label id="textbox-label" for="textbox" class="formLabel">Any comments or suggestions?</label>
+            <textarea id="textbox" name="textbox" rows="6" class="formControl input-textarea">Enter your comments here...</textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit" class="formControl">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
